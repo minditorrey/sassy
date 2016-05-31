@@ -10,15 +10,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl: '/templates/home.html',
 			controller: 'homeController'
 		})
-		.state('users', {
-			url: '/',
-			templateUrl: '/templates/users.html',
-			controller: 'usersController'
+		.state('projects', {
+			url: '/projects',
+			templateUrl: '/templates/projects.html',
+			controller: 'projectsController'
 		})
-		.state('register', {
-			url: '/register',
-			templateUrl: '/templates/users.html',
-			controller: 'usersController'
+		.state('about', {
+			url: '/about',
+			templateUrl: '/templates/about.html',
+			controller: 'aboutController'
+		})		
+		.state('vlog', {
+			url: '/vlog',
+			templateUrl: '/templates/vlog.html',
+			controller: 'vlogController'
 		})
 
 

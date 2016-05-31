@@ -20,9 +20,9 @@ var sass = require('gulp-sass');
 
 gulp.task('default', ['build', 'watch', 'serve']);
 
-gulp.task('build', ['js', 'css', 'html']);
+gulp.task('build', ['js', 'css', 'html', 'images']);
 
-gulp.task('watch', ['watch.js', 'watch.css']);
+gulp.task('watch', ['watch.js', 'watch.css', 'watch.html', 'watch.images']);
 
 gulp.task('serve', function() {
   nodemon({
@@ -80,6 +80,7 @@ gulp.task('watch.css', function() {
   return gulp.watch('./client/scss/**', ['css'])
 });
 
+
 gulp.task('clean.css', function() {
   return del('./public/css');
 });
@@ -87,4 +88,18 @@ gulp.task('clean.css', function() {
 gulp.task('html', function() {
   return gulp.src('./client/templates/**/*.html')
     .pipe(gulp.dest('./public/templates'));
+});
+
+gulp.task('watch.html', function() {
+  return gulp.watch('./client/templates/**', ['html'])
+});
+
+gulp.task('images', function() {
+  return gulp.src(['./client/images/**/*.png',
+                   '.client/images/**/*.jpg'])
+    .pipe(gulp.dest('./public/images'));
+});
+
+gulp.task('watch.images', function() {
+  return gulp.watch('./client/images/**', ['images'])
 });

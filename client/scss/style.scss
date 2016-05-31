@@ -1,71 +1,207 @@
 $myColor: #76dbd7;
 $white: white;
-$blue: #3D6889;
-$myFont: 'Shadows Into Light Two', cursive;
+$blue: #61f4f4;
+$myFont: 'Lora', serif;
 
 
+body { 
+  background: url(http://i.imgur.com/OM3TIQS.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-body {
-	background-color: $myColor;
-	padding: 6%
+
+.carouselRow {
+	margin-top: 4%;
+	background-color: $blue;
+	padding: 3%;
+	text-align: center;
+}
+
+label.love {
+	font-family: $myFont;
+	float: none;
+	font-size: 28px;
+	background-color: black;
+	font-weight: bold;
+
+}
+
+.carousel-indicators li {
+	background-color: black;
+}
+
+.carousel-indicators .active {
+	background-color: $blue;
+}
+
+.carousel {
+	margin-top: 5%;
+}
+.cycle {
+	margin-top: 5%;
+}
+
+.captionHead {
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+
+}
+
+p {
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: $myFont;
+
+}
+
+.caption {
+	margin-top: 10%;
+	margin-bottom: 4%;
+	background-color: black;
+	color: $blue;
+	padding: 4%;
+}
+
+// .carousel-caption {
+// 	max-width: 600px;
+// }
+
+.carousel-caption {
+	// margin-bottom: -18%;
+	text-align: center;
+	position: relative;
+	margin-right: 38%;
+}
+
+
+.tech1 {
+	margin-top: 7%;
+}
+
+.techs {
+	margin-top: 3%;
+}
+
+.aboutMe {
+	margin-top: 5%;
+	background-color: $blue;
+	opacity: .8;
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 5%;
+	padding-top: 2%;
+}
+.label {
+	color: white;
+	font-size: 16px;
+	margin-top: 2%;
+}
+.img-circle {
+    border-radius: 50%;
+    // border: 2px solid #73D0F4;
+    margin-top: 50%;
+    // margin-left: 10%;
+    float: right;
+    // margin-bottom: -6%;
+}
+
+.info {
+	padding-left: 5%;
 
 }
 
 h1 {
-	color: $white;
 	font-family: $myFont;
-	font-size: 42px;
+	font-size: 56px;
+	color: $blue;
+	margin-top: 10%;
 }
 
 h3 {
-	@extend h1;
+	font-family: $myFont;
+	color: $white;
+	font-size: 36px;
 	margin-top: -25%;
-	margin-left: 25%
+	// margin-left: 25%
+	float: right;
 }
 
 h2 {
 	color: $white;
 	font-family: $myFont;
-	font-size: 24px;
-	line-height: 20px;
-	margin-top:  -10px;
+	font-size: 20px;
+	line-height: 26px;
+	margin-top:  -2px;
+	float: right;
+}
+
+h4 {
+	font-family: $myFont;
+	color: $blue;
+
 }
 
 span {
 	@extend h2;
 	color: $white;
-}
-
-#me {
-    position:fixed;
-    bottom:0px;
-    width:100%;   //width should be 100%
-    margin-bottom: 2%;
 
 }
+
+// #me {
+//     position:fixed;
+//     bottom:0px;
+//     width:100%;   //width should be 100%
+//     margin-bottom: 2%;
+// 	padding-left: 45%;
+	
+// }
 
 #meInfo {
     // width:400px; //min width should give to center the div.
-    margin:0 auto; //here it will make center   
+    margin:0 auto; //here it will make center  
+   
+}
+
+a, a:visited {
+	color: $white;
+	font-family: $myFont;
+	font-size: 24px;
+	float: right;
+	margin-left: 4%;
+	text-decoration: none; 
+}
+
+a:hover {
+	color: $blue;
+	text-decoration: none; 
 }
 
 #fsd {
-	color: $blue;
+	color: $white;
 	font-weight: bold;
+	margin-left: 12%;
+	margin-bottom: 1%;
 }
 
-#circle {
-	width: 180px;
-	height: 90px;
-	background: $blue;
-	-moz-border-radius: 60px;
-	-webkit-border-radius: 60px;
-	border-radius: 60px;
-  	box-shadow: 20px 0 0 -2px white;
+.menu {
+	font-size: 18px;
 
 }
 
 .projects {
-	margin-top: 5%;
+	margin-top: 15%;
+	margin-bottom: 12%;
 }
 
+#name {
+	margin-top: 1%;
+	margin-left: 12%;
+	margin-bottom: 1%;
+}
